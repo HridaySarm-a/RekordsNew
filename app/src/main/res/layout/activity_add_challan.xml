@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddChallan.AddChallanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:id="@+id/yolo"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp16"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ac_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_radio_button_checked_24"
+                />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/ac_p_1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:max="100"
+                style="?android:attr/progressBarStyleHorizontal"
+                app:tint="#353535"
+                />
+
+            <ImageView
+                android:id="@+id/ac_img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_circle_24"
+                app:tint="#353535"
+                />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/ac_p_2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:max="100"
+                style="?android:attr/progressBarStyleHorizontal"
+                app:tint="#353535"
+                />
+
+            <ImageView
+                android:id="@+id/ac_img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_circle_24"
+                app:tint="#353535"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/yolo"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dp16"
+            android:weightSum="3"
+            android:layout_marginEnd="@dimen/dp16"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Stage 1"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp12"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Stage 2"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp12"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Stage 3"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp12"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/add_new_client_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "254874002224",
+    "project_id": "rekords-9992c",
+    "storage_bucket": "rekords-9992c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254874002224:android:62fffb0ba0109f670cdef5",
+        "android_client_info": {
+          "package_name": "com.main.rekordsnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254874002224-jptcmdk1dpmaga3vb5mf06u6ojoquuog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.main.rekordsnew",
+            "certificate_hash": "002466e9b39f9cdadfe2647e6d106a1d83b75f3a"
+          }
+        },
+        {
+          "client_id": "254874002224-9b1kg4l7e24avso4r2kh00jr5tgcd4ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBqMqwN9xrBbJVNDlcZzBnm61BQ7-bMFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254874002224-9b1kg4l7e24avso4r2kh00jr5tgcd4ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

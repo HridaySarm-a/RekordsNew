@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.AddChallan.ChildFragments.AcOneFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ac_card_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:contentPadding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proza_libre_bold"
+                android:gravity="center"
+                android:text="SELECT TOTAL LEAF COLLECTORS"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/ac1_number_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:np_dividerColor="@color/colorPrimary"
+                    app:np_dividerType="underline"
+                    app:np_formatter="@string/number_picker_formatter"
+                    app:np_height="60dp"
+                    app:np_max="100"
+                    app:np_min="1"
+                    app:np_order="ascending"
+                    app:np_orientation="horizontal"
+                    app:np_selectedTextColor="@color/dark_greenish_grey"
+                    app:np_selectedTextSize="16sp"
+                    app:np_textColor="@color/greenish_grey"
+                    app:np_textSize="14sp"
+                    app:np_value="1"
+
+                    app:np_width="180dp" />
+
+                <TextView
+                    android:id="@+id/ac1_number_picker_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/dark_greenish_grey"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ac1_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#fff"
+                android:src="@drawable/ic_baseline_arrow_circle_right_24"
+                app:borderWidth="0dp"
+                app:fabCustomSize="40dp"
+                app:fabSize="mini"
+                app:maxImageSize="40dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ac_1_2"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp16"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/scbs_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select ** Leaf Collectors"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/proza_libre_bold"
+            android:gravity="center_horizontal"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/scbs_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp16"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/scbs_selected_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected 0/10"
+                android:textColor="#000"
+                android:fontFamily="@font/opensans_bold"
+                />
+
+                <Button
+                    android:id="@+id/scbs_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:backgroundTint="@color/yellow"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="#000" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

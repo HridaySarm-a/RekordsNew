@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.AddChallan.ChildFragments.AcTwoFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ac_card_2"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:contentPadding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proza_libre_bold"
+                android:text="CHALLAN NO"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" CHALLAN NO"
+                    android:id="@+id/ac_challan_no"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    android:inputType="number"
+                    android:fontFamily="@font/opensans_regular"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/proza_libre_bold"
+                android:text="SET RATE"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" ENTER RATE"
+                    android:id="@+id/ac_rate"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    android:inputType="number"
+                    android:fontFamily="@font/opensans_regular"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_bold"
+                android:text="SET MINUS PERCENT %"
+                android:textColor="#000"
+                android:layout_marginTop="32dp"
+                android:textSize="14sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" ENTER RATE"
+                    android:id="@+id/ac_percent"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    android:inputType="number"
+                    android:fontFamily="@font/opensans_regular"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21/04/2021"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/proza_libre_bold"
+                    android:textColor="#000"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        app:fabCustomSize="40dp"
+                        app:maxImageSize="@dimen/dp24"
+                        app:borderWidth="0dp"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/yellow"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ac_card2_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:fabSize="mini"
+                app:maxImageSize="40dp"
+                app:fabCustomSize="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#fff"
+                android:src="@drawable/ic_baseline_arrow_circle_right_24"
+                app:borderWidth="0dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

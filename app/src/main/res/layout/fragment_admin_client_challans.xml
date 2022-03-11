@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Admin.GrandchildFragments.AdminClientChallansFragment">
+
+    <TextView
+        android:id="@+id/facc_garden_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Tea Garden Name"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:fontFamily="@font/proza_libre_bold"
+        android:gravity="start"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        app:contentPadding="8dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Challans"
+                android:drawablePadding="16dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="start"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_baseline_arrow_downward_24"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_toStartOf="@id/ibv_icon2"-->
+<!--                    android:fontFamily="@font/proza_libre_bold"-->
+<!--                    android:text="Filters"-->
+<!--                    android:textColor="#1A80D1"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <ru.nikartm.support.ImageBadgeView-->
+<!--                    android:id="@+id/ibv_icon2"-->
+<!--                    android:layout_width="16dp"-->
+<!--                    android:layout_height="16dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:src="@drawable/ic_baseline_filter_alt_24"-->
+<!--                    app:ibv_badgeColor="#00ACC1"-->
+<!--                    app:ibv_badgeLimitValue="false"-->
+<!--                    app:ibv_badgeTextColor="#ffffff"-->
+<!--                    app:ibv_badgeTextSize="8sp"-->
+<!--                    app:ibv_badgeTextStyle="bold"-->
+<!--                    app:ibv_badgeValue="4"-->
+<!--                    app:ibv_fixedBadgeRadius="6dp"-->
+
+<!--                    />-->
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/facc_challans_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ooopppooo"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            tools:listitem="@layout/challan_item" />
+
+        <LinearLayout
+            android:id="@+id/ooopppooo"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/facc_view_labor_data_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:backgroundTint="@color/yellow_low"
+                android:layout_height="55dp"
+                android:text="VIEW LABOR DATA"
+                android:textColor="@color/dark_greenish_grey"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/opensans_bold"
+                android:textSize="@dimen/sp10"
+                app:cornerRadius="@dimen/dp8"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/facc_add_new_challan_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_bold"
+                app:backgroundTint="@color/yellow"
+                android:layout_height="55dp"
+                android:textColor="@color/greenish_grey"
+                android:text="ADD NEW CHALLAN"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/sp10"
+                app:cornerRadius="@dimen/dp8"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp8"
+    android:background="#05000000"
+    android:orientation="vertical"
+    android:padding="@dimen/dp16"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/dp4"
+                app:contentPadding="@dimen/dp4"
+                android:layout_marginStart="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp4"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Challan No"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proza_libre_medium"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/cvc_rv_challan_no"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans_bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/dp4"
+                app:contentPadding="@dimen/dp4"
+                android:layout_marginStart="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp4"
+                android:layout_weight="1"
+                android:backgroundTint="@color/greenish_grey"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proza_libre_medium"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/cvc_rv_amount"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 6000"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans_bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/dp4"
+                app:contentPadding="@dimen/dp4"
+                android:layout_marginStart="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp4"
+                android:layout_weight="1"
+                android:backgroundTint="@color/dark_greenish_grey"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Issue Date"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proza_libre_medium"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/cvc_rv_date"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21/05/1974"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans_bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout_cvc_rv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp16"
+        app:el_duration="300"
+        app:el_expanded="true">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          app:cardElevation="@dimen/dp8"
+          android:backgroundTint="@color/white"
+          app:contentPadding="@dimen/dp8"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:weightSum="2"
+                  android:layout_marginTop="@dimen/dp8"
+                  android:layout_height="wrap_content">
+
+                  <com.google.android.material.button.MaterialButton
+                      android:id="@+id/cvc_rv_view_challan_btn"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="View Challan"
+                      app:backgroundTint="@color/dark_greenish_grey"
+                      android:textSize="@dimen/sp10"
+                      android:layout_marginStart="@dimen/dp8"
+                      android:layout_marginEnd="@dimen/dp8"
+                      />
+
+                  <com.google.android.material.button.MaterialButton
+                      android:id="@+id/cvc_rv_download_challan_btn"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      app:backgroundTint="@color/greenish_grey"
+                      android:text="Donwload Challan"
+                      android:textSize="@dimen/sp10"
+                      android:layout_marginStart="@dimen/dp8"
+                      android:layout_marginEnd="@dimen/dp8"
+                      />
+
+              </LinearLayout>
+
+          </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+</LinearLayout>

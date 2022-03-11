@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AutoGenerate.AutoGenerateChallanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greenish_grey"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Challan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16"
+                    android:fontFamily="@font/opensans_bold"
+                    android:letterSpacing="0.1"
+                    />
+
+                <ImageView
+                    android:id="@+id/aagc_filterBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_filter_list_24"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="match_parent">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="horizontal"
+                   android:weightSum="2"
+                   android:layout_margin="@dimen/dp8"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:orientation="vertical"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="@dimen/sp14"
+                               android:textColor="@color/black"
+                               android:fontFamily="@font/opensans_bold"
+                               android:text="Challan No : "
+                               />
+
+                           <TextView
+                               android:id="@+id/aagc_challan_no"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/black_rect_border"
+                               android:text="000000"
+                               android:layout_marginStart="@dimen/dp8"
+                               android:padding="4dp"
+                               android:textSize="@dimen/sp16"
+                               android:fontFamily="@font/opensans_bold"
+                               android:textColor="@color/black"
+                               />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_marginTop="@dimen/dp4"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="@dimen/sp14"
+                               android:textColor="@color/black"
+                               android:fontFamily="@font/opensans_bold"
+                               android:text="Date : "
+                               />
+
+                           <TextView
+                               android:id="@+id/aagc_date"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/black_rect_border"
+                               android:text="21-05-6645"
+                               android:layout_marginStart="@dimen/dp8"
+                               android:padding="4dp"
+                               android:textSize="@dimen/sp16"
+                               android:fontFamily="@font/opensans_bold"
+                               android:textColor="@color/black"
+                               />
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:orientation="vertical"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="@dimen/sp14"
+                               android:textColor="@color/black"
+                               android:fontFamily="@font/opensans_bold"
+                               android:text="Rate : "
+                               />
+
+                           <TextView
+                               android:id="@+id/aagc_rate_main"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/black_rect_border"
+                               android:text="000000"
+                               android:layout_marginStart="@dimen/dp8"
+                               android:padding="4dp"
+                               android:textSize="@dimen/sp16"
+                               android:fontFamily="@font/opensans_bold"
+                               android:textColor="@color/black"
+                               />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_marginTop="@dimen/dp4"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="@dimen/sp14"
+                               android:textColor="@color/black"
+                               android:fontFamily="@font/opensans_bold"
+                               android:text="% Minus : "
+                               />
+
+                           <TextView
+                               android:id="@+id/aagc_minus_main"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/black_rect_border"
+                               android:text="21-05-6645"
+                               android:layout_marginStart="@dimen/dp8"
+                               android:padding="4dp"
+                               android:textSize="@dimen/sp16"
+                               android:fontFamily="@font/opensans_bold"
+                               android:textColor="@color/black"
+                               />
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:padding="@dimen/dp8"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="SL. No"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Local"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="%"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Minus"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Net"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Rate"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Amount"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Admin"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Comm"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Carrying"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Cess"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Misc"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Total"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="@dimen/dp40"
+                           android:padding="@dimen/dp4"
+                           android:gravity="center"
+                           android:background="@drawable/black_rect_border"
+                           android:text="Net Amount"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/opensans_bold"
+                           android:textSize="@dimen/sp14"
+                           />
+
+                   </LinearLayout>
+
+               </HorizontalScrollView>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/aagc_rv"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   tools:listitem="@layout/new_challan_row_layout"
+                   android:layout_marginTop="@dimen/dp4"
+                   />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:layout_marginTop="@dimen/dp8"
+                   android:text="Submit"
+                   android:layout_margin="@dimen/dp8"
+
+                   />
+
+           </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:contentPadding="8dp"
+    app:cardElevation="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dci_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="6dp"
+                android:src="@drawable/happy_emoji"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/dci_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Client Name"
+                    android:textColor="#000"
+                    android:fontFamily="@font/proza_libre_bold"
+                    android:gravity="start"
+                    android:textSize="14sp"
+                    />
+
+
+                    <TextView
+                        android:id="@+id/dci_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1234567888"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:id="@+id/dci_garden_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:text="The Garden Name"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/dci_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:text="The full long address with pincode"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_height="0dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/dci_call_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        app:backgroundTint="@color/greenish_grey"
+                        app:fabCustomSize="50dp"
+                        app:fabSize="mini"
+                        app:maxImageSize="20dp"
+                        app:srcCompat="@drawable/ic_baseline_local_phone_24_white"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/dci_message_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/dark_greenish_grey"
+                        app:srcCompat="@drawable/ic_baseline_message_24_white"
+                        app:tint="@color/white"
+                        app:fabCustomSize="50dp"
+                        app:fabSize="mini"
+                        app:maxImageSize="20dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_height="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/dci_delete_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:backgroundTint="@color/dark_greenish_grey"
+                            app:tint="@color/white"
+                            app:srcCompat="@drawable/ic_delete_"
+                            app:borderWidth="0dp"
+                            app:fabCustomSize="50dp"
+                            app:fabSize="mini"
+                            app:maxImageSize="20dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/dci_edit_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:backgroundTint="@color/greenish_grey"
+                            app:tint="@color/white"
+                            app:srcCompat="@drawable/ic_baseline_edit_24_white"
+                            app:fabCustomSize="50dp"
+                            app:fabSize="mini"
+                            app:maxImageSize="20dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

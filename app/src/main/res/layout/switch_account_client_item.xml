@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp4"
+    app:cardElevation="@dimen/dp4"
+    app:contentPadding="@dimen/dp4"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/saci_image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/happy_emoji"
+            android:padding="4dp"
+            android:background="#12000000"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:paddingStart="16dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/saci_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Client Name"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/opensans_bold"
+                    />
+
+                <TextView
+                    android:id="@+id/saci_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+91 900090900"
+                    android:textColor="#000"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/opensans_regular"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#20000000"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="16dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Garden Name"
+                    android:textColor="#0B208F"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/opensans_bold"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/saci_garden_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lamabari Tea Estate"
+                    android:textColor="#000"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/opensans_regular"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
