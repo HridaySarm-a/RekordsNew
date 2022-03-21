@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RekordsNew">
         <activity
+            android:name=".Admin.AutoGenerate.AutoGenerateCsvActivity"
+            android:exported="false" />
+        <activity
             android:name=".Admin.AutoGenerate.AutoGenerateChallanActivity"
             android:exported="false" />
         <activity

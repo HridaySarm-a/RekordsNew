@@ -7,6 +7,9 @@ public class LeafEntryModel {
     private String key;
     private String leaf_collector_id;
 
+    public LeafEntryModel() {
+    }
+
     public LeafEntryModel(String date, String growerId, float quantity, String leaf_collector_id) {
         this.date = date;
         this.growerId = growerId;

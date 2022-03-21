@@ -13,6 +13,7 @@
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_add_challan.xml" value="0.27307692307692305" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_admin_home.xml" value="0.27307692307692305" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_auto_generate_challan.xml" value="0.33" />
+        <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_auto_generate_csv.xml" value="0.2731936725096195" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_client_home.xml" value="0.22" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_client_view_challans.xml" value="0.33" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_edit_client.xml" value="0.27307692307692305" />
@@ -30,6 +31,7 @@
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_register_client.xml" value="0.19" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/activity_register_others.xml" value="0.27307692307692305" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/add_delete_edit_dialog_item.xml" value="0.2731936725096195" />
+        <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/auto_challan_batch_list_item.xml" value="0.25" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/challan_input_layout.xml" value="0.2731936725096195" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/challan_item.xml" value="0.27307692307692305" />
         <entry key="..\:/ZapaLabs/RekordsNew/app/src/main/res/layout/custom_dialog_progress.xml" value="0.27307692307692305" />

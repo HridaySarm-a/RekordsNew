@@ -37,8 +37,7 @@
                     android:id="@+id/aagc_filterBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_filter_list_24"
-                    />
+                    android:src="@drawable/ic_baseline_filter_list_24" />
 
             </RelativeLayout>
 
@@ -218,6 +217,7 @@
                            android:background="@drawable/black_rect_border"
                            android:text="SL. No"
                            android:textColor="@color/black"
+                           android:layout_margin="@dimen/dp8"
                            android:fontFamily="@font/opensans_bold"
                            android:textSize="@dimen/sp14"
                            />
@@ -229,6 +229,7 @@
                            android:gravity="center"
                            android:background="@drawable/black_rect_border"
                            android:text="Local"
+                           android:layout_margin="@dimen/dp8"
                            android:textColor="@color/black"
                            android:fontFamily="@font/opensans_bold"
                            android:textSize="@dimen/sp14"
@@ -240,6 +241,7 @@
                            android:gravity="center"
                            android:background="@drawable/black_rect_border"
                            android:text="%"
+                           android:layout_margin="@dimen/dp8"
                            android:textColor="@color/black"
                            android:fontFamily="@font/opensans_bold"
                            android:textSize="@dimen/sp14"
@@ -252,6 +254,7 @@
                            android:gravity="center"
                            android:background="@drawable/black_rect_border"
                            android:text="Minus"
+                           android:layout_margin="@dimen/dp8"
                            android:textColor="@color/black"
                            android:fontFamily="@font/opensans_bold"
                            android:textSize="@dimen/sp14"
@@ -261,6 +264,7 @@
                            android:layout_width="100dp"
                            android:layout_height="@dimen/dp40"
                            android:padding="@dimen/dp4"
+                           android:layout_margin="@dimen/dp8"
                            android:gravity="center"
                            android:background="@drawable/black_rect_border"
                            android:text="Net"
@@ -274,6 +278,7 @@
                            android:layout_height="@dimen/dp40"
                            android:padding="@dimen/dp4"
                            android:gravity="center"
+                           android:layout_margin="@dimen/dp8"
                            android:background="@drawable/black_rect_border"
                            android:text="Rate"
                            android:textColor="@color/black"
@@ -288,6 +293,7 @@
                            android:background="@drawable/black_rect_border"
                            android:text="Amount"
                            android:textColor="@color/black"
+                           android:layout_margin="@dimen/dp8"
                            android:fontFamily="@font/opensans_bold"
                            android:textSize="@dimen/sp14"
                            />
@@ -296,6 +302,7 @@
                            android:layout_height="@dimen/dp40"
                            android:padding="@dimen/dp4"
                            android:gravity="center"
+                           android:layout_margin="@dimen/dp8"
                            android:background="@drawable/black_rect_border"
                            android:text="Admin"
                            android:textColor="@color/black"
@@ -305,6 +312,7 @@
                        <TextView
                            android:layout_width="100dp"
                            android:layout_height="@dimen/dp40"
+                           android:layout_margin="@dimen/dp8"
                            android:padding="@dimen/dp4"
                            android:gravity="center"
                            android:background="@drawable/black_rect_border"
@@ -321,6 +329,7 @@
                            android:background="@drawable/black_rect_border"
                            android:text="Carrying"
                            android:textColor="@color/black"
+                           android:layout_margin="@dimen/dp8"
                            android:fontFamily="@font/opensans_bold"
                            android:textSize="@dimen/sp14"
                            />
@@ -328,6 +337,7 @@
                            android:layout_width="100dp"
                            android:layout_height="@dimen/dp40"
                            android:padding="@dimen/dp4"
+                           android:layout_margin="@dimen/dp8"
                            android:gravity="center"
                            android:background="@drawable/black_rect_border"
                            android:text="Cess"
@@ -338,6 +348,7 @@
                        <TextView
                            android:layout_width="100dp"
                            android:layout_height="@dimen/dp40"
+                           android:layout_margin="@dimen/dp8"
                            android:padding="@dimen/dp4"
                            android:gravity="center"
                            android:background="@drawable/black_rect_border"
@@ -351,6 +362,7 @@
                            android:layout_height="@dimen/dp40"
                            android:padding="@dimen/dp4"
                            android:gravity="center"
+                           android:layout_margin="@dimen/dp8"
                            android:background="@drawable/black_rect_border"
                            android:text="Total"
                            android:textColor="@color/black"
@@ -362,6 +374,7 @@
                            android:layout_height="@dimen/dp40"
                            android:padding="@dimen/dp4"
                            android:gravity="center"
+                           android:layout_margin="@dimen/dp8"
                            android:background="@drawable/black_rect_border"
                            android:text="Net Amount"
                            android:textColor="@color/black"
@@ -382,12 +395,12 @@
                    />
 
                <Button
+                   android:id="@+id/auto_generate_submit_btn"
                    android:layout_width="match_parent"
                    android:layout_height="60dp"
                    android:layout_marginTop="@dimen/dp8"
                    android:text="Submit"
                    android:layout_margin="@dimen/dp8"
-
                    />
 
            </LinearLayout>

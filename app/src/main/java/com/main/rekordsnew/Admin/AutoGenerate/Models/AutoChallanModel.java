@@ -1,10 +1,12 @@
 package com.main.rekordsnew.Admin.AutoGenerate.Models;
 
-public class AutoChallanModel {
-    private int slNo,local;
-    private float percentage,minus,net,rate,amount,admin,comm,carrying,cess,misc,total,netAmount;
+import java.io.Serializable;
 
-    public AutoChallanModel(int slNo, int local,  float rate) {
+public class AutoChallanModel implements Serializable {
+    private int slNo, local;
+    private float percentage, minus, net, rate, amount, admin, comm, carrying, cess, misc, total, netAmount;
+
+    public AutoChallanModel(int slNo, int local, float rate) {
         this.slNo = slNo;
         this.local = local;
         this.percentage = 0;
@@ -18,7 +20,7 @@ public class AutoChallanModel {
         this.cess = 0;
         this.misc = 0;
         this.total = 0;
-        this.netAmount = local*rate;
+        this.netAmount = local * rate;
     }
 
     public AutoChallanModel() {

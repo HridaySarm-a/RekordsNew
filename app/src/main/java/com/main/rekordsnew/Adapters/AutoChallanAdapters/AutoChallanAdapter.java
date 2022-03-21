@@ -1,6 +1,7 @@
 package com.main.rekordsnew.Adapters.AutoChallanAdapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,7 @@ public class AutoChallanAdapter extends RecyclerView.Adapter<AutoChallanAdapter.
 
     Context context;
     List<AutoChallanModel> autoChallanModelList;
+    private static final String TAG = "AutoChallanAdapter";
 
     public AutoChallanAdapter(Context context, List<AutoChallanModel> autoChallanModelList) {
         this.context = context;
@@ -39,10 +41,26 @@ public class AutoChallanAdapter extends RecyclerView.Adapter<AutoChallanAdapter.
     public void onBindViewHolder(@NonNull AutoChallanAdapter.ViewHolder holder, int position) {
         holder.slNo.setText(String.valueOf(position + 1));
         holder.local.setText(String.valueOf(autoChallanModelList.get(position).getLocal()));
+        try {
+            holder.percentage.setText(String.valueOf(autoChallanModelList.get(position).getPercentage()));
+            holder.minus.setText(String.valueOf(autoChallanModelList.get(position).getMisc()));
+            holder.net.setText(String.valueOf(autoChallanModelList.get(position).getNet()));
+            holder.rate.setText(String.valueOf(autoChallanModelList.get(position).getRate()));
+            holder.amount.setText(String.valueOf(autoChallanModelList.get(position).getAmount()));
+            holder.admin.setText(String.valueOf(autoChallanModelList.get(position).getAdmin()));
+            holder.comm.setText(String.valueOf(autoChallanModelList.get(position).getComm()));
+            holder.carrying.setText(String.valueOf(autoChallanModelList.get(position).getCarrying()));
+            holder.cess.setText(String.valueOf(autoChallanModelList.get(position).getCess()));
+            holder.misc.setText(String.valueOf(autoChallanModelList.get(position).getMisc()));
+            holder.total.setText(String.valueOf(autoChallanModelList.get(position).getTotal()));
+            holder.net_amount.setText(String.valueOf(autoChallanModelList.get(position).getNetAmount()));
+        } catch (NullPointerException e) {
+            Log.e(TAG, e.getMessage());
+        }
         holder.percentage.setOnClickListener(view -> {
             EventBus.getDefault().postSticky(new ACAClicked(true, position, autoChallanModelList.get(position), "PERCENTAGE"));
-        })
-        ;holder.minus.setOnClickListener(view -> {
+        });
+        holder.minus.setOnClickListener(view -> {
             EventBus.getDefault().postSticky(new ACAClicked(true, position, autoChallanModelList.get(position), "MINUS"));
         });
         holder.net.setOnClickListener(view -> {
@@ -77,9 +95,19 @@ public class AutoChallanAdapter extends RecyclerView.Adapter<AutoChallanAdapter.
         });
     }
 
-    public void updateData(int position,AutoChallanModel autoChallanModel){
-        autoChallanModelList.set(position,autoChallanModel);
+    public void updateData(int position, AutoChallanModel autoChallanModel) {
+        autoChallanModelList.set(position, autoChallanModel);
+        Log.d("Adapter Challan", "position = " + position);
         notifyItemChanged(position);
+    }
+
+    public List<AutoChallanModel> getList() {
+        return autoChallanModelList;
+    }
+
+    public void updateList(List<AutoChallanModel> updatedList){
+        autoChallanModelList = updatedList;
+        notifyDataSetChanged();
     }
 
     @Override
@@ -87,7 +115,7 @@ public class AutoChallanAdapter extends RecyclerView.Adapter<AutoChallanAdapter.
         return autoChallanModelList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder  implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         //        TextView challanNo,date,rateMain,minusMain;
         TextView slNo, local, percentage, minus, net, rate, amount,
@@ -138,7 +166,7 @@ public class AutoChallanAdapter extends RecyclerView.Adapter<AutoChallanAdapter.
 
         @Override
         public void onClick(View view) {
-            clickListener.onClicked(view,getAdapterPosition());
+            clickListener.onClicked(view, getAdapterPosition());
         }
     }
 }
